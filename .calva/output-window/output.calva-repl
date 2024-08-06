@@ -1,0 +1,370 @@
+; This is the Calva REPL Window.
+; It's just a file, really, with some special treatment from Calva.
+; Use it as a REPL input prompt if you like. (When the REPL is connected.)
+; TIPS: The keyboard shortcut `ctrl+alt+o r` shows and focuses this window
+; Please see https://calva.io/repl-window/ for more info.
+; Happy coding! ♥️
+
+; TIPS: As with any Clojure file when the REPL is connected:
+; - `alt+enter` evaluates the current top level form.
+; - `ctrl+enter` evaluates the current form.
+; Special for this file:
+; - `alt+up` and `alt+down` traverse up and down the REPL command history
+;    when the cursor is after the last contents at the prompt
+; 
+; See also the Calva Inspector: https://calva.io/inspector/
+
+PLEASE NOTE
+We will update the default location of this file.
+The new default location will be
+  "<projectRootPath>/.calva/repl.calva-repl"
+For now the legacy path is used by default.
+To give yourself a smooth transition, you can opt in
+to the change, by configuring this setting as false:
+  "calva.useLegacyReplWindowPath"
+and then add "**/.calva/repl.calva-repl" to your ".gitignore" file.
+
+
+This file is configured as the output destination for all REPL output.
+You can configure this with the setting:
+  "calva.outputDestinations"
+
+
+; Jacking in...
+; TypeError: Cannot read properties of undefined (reading 'label')
+; Aborting jack-in.
+; Jacking in...
+; Connecting using "deps.edn" project type.
+; You can make Calva auto-select this.
+;   - See https://calva.io/connect-sequences/
+; 
+
+; Starting Jack-in: pushd c:\Users\limad\OneDrive\Documentos\projects\rock-paper-scissors & java -jar c:\Users\limad\.vscode\extensions\betterthantomorrow.calva-2.0.467\deps.clj.jar -Sdeps "{:deps {nrepl/nrepl {:mvn/version,\"1.1.1\"},cider/cider-nrepl {:mvn/version,\"0.47.1\"}}}" -M -m nrepl.cmdline --middleware "[cider.nrepl/cider-middleware]" & popd
+; Using host:port 127.0.0.1:54151 ...
+; Hooking up nREPL sessions ...
+; Connected session: clj
+; Evaluating code from settings: 'calva.autoEvaluateCode.onConnect.clj'
+nil
+clj꞉user꞉> 
+"Please see https://calva.io/output/#about-stdout-in-the-repl-window
+about why stdout printed to this file is prepended with `;` to be line comments."
+clj꞉user꞉> 
+; Jack-in done.
+clj꞉user꞉> (+ 100 200)
+300
+clj꞉user꞉> 
+; Evaluating file: game.clj
+; Welcome to the Rock, Paper, Scissors championship!
+nil
+clj꞉game꞉> 
+#'game/-main
+clj꞉game꞉> 
+#'rock-paper-scissors.game/-main
+clj꞉rock-paper-scissors.game꞉> 
+nil
+clj꞉rock-paper-scissors.game꞉> 
+#'rock-paper-scissors.game/-main
+clj꞉rock-paper-scissors.game꞉> 
+(defn -main [& args]
+  (println "Welcome to the Rock, Paper, Scissors championship")
+  (println "Ready to play? Type y, n or q to quit."))
+#'rock-paper-scissors.game/-main
+clj꞉rock-paper-scissors.game꞉> 
+#'rock-paper-scissors.game/-main
+clj꞉rock-paper-scissors.game꞉> 
+; Evaluating file: core.clj
+nil
+clj꞉rock-paper-scissors.game꞉> 
+; Evaluating file: core.clj
+nil
+clj꞉rock-paper-scissors.game꞉> -main
+#function[rock-paper-scissors.game/-main]
+clj꞉rock-paper-scissors.game꞉> 
+nil
+clj꞉rock-paper-scissors.game꞉> 
+nil
+clj꞉rock-paper-scissors.game꞉> 
+; Welcome to the Rock, Paper, Scissors championship
+; Ready to play? Type y, n or q to quit.
+"y"
+clj꞉rock-paper-scissors.game꞉> 
+; Evaluating file: core.clj
+nil
+clj꞉rock-paper-scissors.game꞉> 
+; Welcome to the Rock, Paper, Scissors championship
+; Ready to play? Type y, n or q to quit.
+"y"
+clj꞉rock-paper-scissors.game꞉> 
+; Evaluating file: core.clj
+nil
+clj꞉rock-paper-scissors.game꞉> 
+; Welcome to the Rock, Paper, Scissors championship
+; Ready to play? Type y, n or q to quit.
+"y"
+clj꞉rock-paper-scissors.game꞉> 
+; Evaluating file: core.clj
+nil
+clj꞉rock-paper-scissors.game꞉> 
+; Welcome to the Rock, Paper, Scissors championship
+; Ready to play? Type y, n or q to quit.
+; Let's start the game
+nil
+clj꞉rock-paper-scissors.game꞉> 
+; Welcome to the Rock, Paper, Scissors championship
+; Ready to play? Type y, n or q to quit.
+; I don't undesrtand yout input (yet)
+nil
+clj꞉rock-paper-scissors.game꞉> 
+; Evaluating file: core.clj
+nil
+clj꞉rock-paper-scissors.game꞉> 
+; Welcome to the Rock, Paper, Scissors championship
+; Ready to play? Type y, n or q to quit.
+; Your're not ready? Then I'll wait.
+nil
+clj꞉rock-paper-scissors.game꞉> 
+; Evaluating file: core.clj
+nil
+clj꞉rock-paper-scissors.game꞉> 
+; Welcome to the Rock, Paper, Scissors championship
+; Ready to play? Type y, n or q to quit.
+; Let's start the game
+nil
+clj꞉rock-paper-scissors.game꞉> 
+; Evaluating file: core.clj
+nil
+clj꞉rock-paper-scissors.game꞉> 
+; Welcome to the Rock, Paper, Scissors championship
+; Ready to play? Type y, n or q to quit.
+; I don't undesrtand yout input.
+; Ready to play? Type y, n or q to quit.
+; Let's start the game
+nil
+clj꞉rock-paper-scissors.game꞉> 
+; Welcome to the Rock, Paper, Scissors championship
+; Ready to play? Type y, n or q to quit.
+; See you next time!
+nil
+clj꞉rock-paper-scissors.game꞉> 
+; Evaluating file: core.clj
+nil
+clj꞉rock-paper-scissors.game꞉> 
+; Evaluating file: core.clj
+nil
+clj꞉rock-paper-scissors.game꞉> 
+; Welcome to the Rock, Paper, Scissors championship
+; Ready to play? Type y, n or q to quit.
+; Your're not ready? Then I'll wait.
+; Ready to play? Type y, n or q to quit.
+; Let's start the game
+nil
+clj꞉rock-paper-scissors.game꞉> 
+#'rock-paper-scissors.game/play-game
+clj꞉rock-paper-scissors.game꞉> 
+#'rock-paper-scissors.game/play-game
+clj꞉rock-paper-scissors.game꞉> 
+; Evaluating file: core.clj
+nil
+clj꞉rock-paper-scissors.game꞉> 
+nil
+clj꞉rock-paper-scissors.game꞉> 
+; Welcome to the Rock, Paper, Scissors championship
+; Ready to play? Type y, n or q to quit.
+; Let's start the game
+; Choose (r)ock, (p)aper, (s)cissors, or (q)uit.
+; Sending interrupt.; Evaluation was interrupted
+clj꞉rock-paper-scissors.game꞉> 
+Execution error (InterruptedException) at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject/reportInterruptAfterWait (REPL:-1).
+; null
+; Evaluating file: core.clj
+nil
+clj꞉rock-paper-scissors.game꞉> 
+; Welcome to the Rock, Paper, Scissors championship
+; Ready to play? Type y, n or q to quit.
+; Let's start the game
+; Choose (r)ock, (p)aper, (s)cissors, or (q)uit.
+; You chose r
+; Choose (r)ock, (p)aper, (s)cissors, or (q)uit.
+; Quitting game
+; Ready to play? Type y, n or q to quit.
+; Sending interrupt.; Evaluation was interrupted
+clj꞉rock-paper-scissors.game꞉> 
+Execution error (InterruptedException) at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject/reportInterruptAfterWait (REPL:-1).
+; null
+#'rock-paper-scissors.game/->move
+clj꞉rock-paper-scissors.game꞉> 
+; Evaluating file: core.clj
+nil
+clj꞉rock-paper-scissors.game꞉> 
+; Welcome to the Rock, Paper, Scissors championship
+; Ready to play? Type y, n or q to quit.
+; I don't undesrtand yout input.
+; Ready to play? Type y, n or q to quit.
+; Let's start the game
+; Choose (r)ock, (p)aper, (s)cissors, or (q)uit.
+; You chose nil
+; Choose (r)ock, (p)aper, (s)cissors, or (q)uit.
+; You chose :rock
+; Choose (r)ock, (p)aper, (s)cissors, or (q)uit.
+; Quitting game
+; Ready to play? Type y, n or q to quit.
+; See you next time!
+nil
+clj꞉rock-paper-scissors.game꞉> 
+; Evaluating file: core.clj
+nil
+clj꞉rock-paper-scissors.game꞉> 
+; Welcome to the Rock, Paper, Scissors championship
+; Ready to play? Type y, n or q to quit.
+; Let's start the game
+; Choose (r)ock, (p)aper, (s)cissors, or (q)uit.
+; You chose :rock
+; Choose (r)ock, (p)aper, (s)cissors, or (q)uit.
+; You chose :paper
+; Choose (r)ock, (p)aper, (s)cissors, or (q)uit.
+; You chose :scissors
+; Choose (r)ock, (p)aper, (s)cissors, or (q)uit.
+; j is an invalid move.
+; Choose (r)ock, (p)aper, (s)cissors, or (q)uit.
+; Quitting game
+; Ready to play? Type y, n or q to quit.
+; See you next time!
+nil
+clj꞉rock-paper-scissors.game꞉> 
+; Evaluating file: core.clj
+nil
+clj꞉rock-paper-scissors.game꞉> 
+; Evaluating file: core.clj
+nil
+clj꞉rock-paper-scissors.game꞉> 
+; Welcome to the Rock, Paper, Scissors championship
+; Ready to play? Type y, n or q to quit.
+; Let's start the game
+; Choose (r)ock, (p)aper, (s)cissors, or (q)uit.
+; You chose :rock
+; Choose (r)ock, (p)aper, (s)cissors, or (q)uit.
+; You chose :paper
+; Choose (r)ock, (p)aper, (s)cissors, or (q)uit.
+; You chose :scissors
+; Choose (r)ock, (p)aper, (s)cissors, or (q)uit.
+; Quitting game
+; Ready to play? Type y, n or q to quit.
+; See you next time!
+nil
+clj꞉rock-paper-scissors.game꞉> 
+; Evaluating file: core.clj
+nil
+clj꞉rock-paper-scissors.game꞉> 
+; Evaluating file: core.clj
+nil
+clj꞉rock-paper-scissors.game꞉> 
+; Evaluating file: core.clj
+nil
+clj꞉rock-paper-scissors.game꞉> (play-round :paper)
+{:player :paper, :computer :rock, :result :win}
+clj꞉rock-paper-scissors.game꞉> 
+; Evaluating file: core.clj
+nil
+clj꞉rock-paper-scissors.game꞉> 
+; Welcome to the Rock, Paper, Scissors championship
+; Ready to play? Type y, n or q to quit.
+; Let's start the game
+; Choose (r)ock, (p)aper, (s)cissors, or (q)uit.
+; You: :rock, Computer: :rock, it's a draw
+; Choose (r)ock, (p)aper, (s)cissors, or (q)uit.
+; You: :paper, Computer: :rock, you win!
+; Choose (r)ock, (p)aper, (s)cissors, or (q)uit.
+; You: :scissors, Computer: :rock, you lose!
+; Choose (r)ock, (p)aper, (s)cissors, or (q)uit.
+; You: :rock, Computer: :rock, it's a draw
+; Choose (r)ock, (p)aper, (s)cissors, or (q)uit.
+; You: :paper, Computer: :rock, you win!
+; Choose (r)ock, (p)aper, (s)cissors, or (q)uit.
+; Quitting game
+; Ready to play? Type y, n or q to quit.
+; See you next time!
+nil
+clj꞉rock-paper-scissors.game꞉> 
+; Evaluating file: core.clj
+nil
+clj꞉rock-paper-scissors.game꞉> 
+; Welcome to the Rock, Paper, Scissors championship
+; Ready to play? Type y, n or q to quit.
+; Let's start the game
+; Choose (r)ock, (p)aper, (s)cissors, or (q)uit.
+; You: rock, Computer: rock, it's a draw
+; Choose (r)ock, (p)aper, (s)cissors, or (q)uit.
+; You: paper, Computer: rock, you win!
+; Choose (r)ock, (p)aper, (s)cissors, or (q)uit.
+; Quitting game
+; Ready to play? Type y, n or q to quit.
+; See you next time!
+nil
+clj꞉rock-paper-scissors.game꞉> 
+; Evaluating file: core.clj
+; 
+; Syntax error (IllegalArgumentException) compiling recur at (c:\Users\limad\OneDrive\Documentos\projects\rock-paper-scissors\src\core.clj:65:11).
+; Mismatched argument count to recur, expected: 1 args, got: 0
+; Evaluation of file core.clj failed: class clojure.lang.Compiler$CompilerException
+clj꞉rock-paper-scissors.game꞉> 
+; Evaluating file: core.clj
+; 
+; Syntax error (IllegalArgumentException) compiling recur at (c:\Users\limad\OneDrive\Documentos\projects\rock-paper-scissors\src\core.clj:76:11).
+; Mismatched argument count to recur, expected: 1 args, got: 0
+; Evaluation of file core.clj failed: class clojure.lang.Compiler$CompilerException
+clj꞉rock-paper-scissors.game꞉> 
+; Evaluating file: core.clj
+nil
+clj꞉rock-paper-scissors.game꞉> 
+; Evaluating file: core.clj
+nil
+clj꞉rock-paper-scissors.game꞉> 
+; Welcome to the Rock, Paper, Scissors championship
+; Ready to play? Type y, n or q to quit.
+; Let's start the game
+; {:win 0, :draw 0, :lose 0}
+; Choose (r)ock, (p)aper, (s)cissors, or (q)uit.
+; You: rock, Computer: rock, it's a draw
+; {:win 0, :draw 1, :lose 0}
+; Choose (r)ock, (p)aper, (s)cissors, or (q)uit.
+; You: paper, Computer: rock, you win!
+; {:win 1, :draw 1, :lose 0}
+; Choose (r)ock, (p)aper, (s)cissors, or (q)uit.
+; You: scissors, Computer: rock, you lose!
+; {:win 1, :draw 1, :lose 1}
+; Choose (r)ock, (p)aper, (s)cissors, or (q)uit.
+; You: rock, Computer: rock, it's a draw
+; {:win 1, :draw 2, :lose 1}
+; Choose (r)ock, (p)aper, (s)cissors, or (q)uit.
+; Evaluating file: core.clj
+; y is an invalid move.
+; {:win 1, :draw 2, :lose 1}
+; Choose (r)ock, (p)aper, (s)cissors, or (q)uit.
+; Sending interrupt.; Evaluation was interrupted
+clj꞉rock-paper-scissors.game꞉> 
+Execution error (InterruptedException) at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject/reportInterruptAfterWait (REPL:-1).
+; null
+nil
+clj꞉rock-paper-scissors.game꞉> 
+; Welcome to the Rock, Paper, Scissors championship
+; Ready to play? Type y, n or q to quit.
+; Let's start the game
+; Wins: 0, Losses: 0, Draws: 0
+; Choose (r)ock, (p)aper, (s)cissors, or (q)uit.
+; You: rock, Computer: rock, it's a draw
+; Wins: 0, Losses: 0, Draws: 1
+; Choose (r)ock, (p)aper, (s)cissors, or (q)uit.
+; You: paper, Computer: rock, you win!
+; Wins: 1, Losses: 0, Draws: 1
+; Choose (r)ock, (p)aper, (s)cissors, or (q)uit.
+; You: rock, Computer: rock, it's a draw
+; Wins: 1, Losses: 0, Draws: 2
+; Choose (r)ock, (p)aper, (s)cissors, or (q)uit.
+; You: scissors, Computer: rock, you lose!
+; Wins: 1, Losses: 1, Draws: 2
+; Choose (r)ock, (p)aper, (s)cissors, or (q)uit.
+; Quitting game
+; Ready to play? Type y, n or q to quit.
+; See you next time!
+nil
+clj꞉rock-paper-scissors.game꞉> 
